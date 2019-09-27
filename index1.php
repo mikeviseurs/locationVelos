@@ -17,39 +17,6 @@
     <?php
         require "Admin/header.php";
     ?>
-    <!-- <nav class="navbar navbar-expand-md navbar-light bg-info sticky-top">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo_200.png" width="30" height="30" alt="logo">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="HTML/Lieux.php">Location</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="HTML/contact.php">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="HTML/login.php">s'identifier/s'enregistrer</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        nom_connecté
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="HTML/profil.php">Profil</a>
-                        <a class="dropdown-item" href="#">Déconnecter</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav> -->
     <div class="bg-light">
         <div class="container bg-white">
             <section>

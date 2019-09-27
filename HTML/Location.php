@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../Libs/css/Location.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-4 pt-5">
                                 <button type="button" class="btn" data-toggle="modal" data-target="#modalElec">
-                                    <img src="../img/electrique_1024.jpg" class="card-img" alt="vélo électrique">
+                                    <img src="../Libs/img/electrique_1024.jpg" class="card-img" alt="vélo électrique">
                                 </button>
                                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalElec">Détails</button>
                             </div>
@@ -69,7 +69,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="../img/electrique_1024.jpg" class="card-img" alt="vélo électrique">
+                                    <img src="../Libs/img/electrique_1024.jpg" class="card-img" alt="vélo électrique">
                                     <p>Le vélo électrique VOG D7 de la marque O2Feel, fera un parfait vélo de ville à petit budget ! Maniable, élégant et efficace il possède l'essentiel pour parcourir la ville avec un grand plaisir de conduite et cela sans
                                         exploser le budget ! Côté technique, le vélo électrique VOG D7 sera équipé de la technologie de motorisation ORIGIN solution breveté par la marque O2Feel et qui lui assurera jusqu'à 80 km d'autonomie.</p>
                                 </div>
@@ -84,7 +84,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-4 pt-5">
                                 <button type="button" class="btn" data-toggle="modal" data-target="#modalVTT">
-                                    <img src="../img/VTT_1024.jpg" class="card-img" alt="vélo Tout-Terrain">
+                                    <img src="../Libs/img/VTT_1024.jpg" class="card-img" alt="vélo Tout-Terrain">
                                 </button>
                                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalVTT">Détails</button>
                             </div>
@@ -127,7 +127,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="../img/VTT_1024.jpg" class="card-img" alt="vélo Tout-Terrain">
+                                    <img src="../Libs/img/VTT_1024.jpg" class="card-img" alt="vélo Tout-Terrain">
                                     <p>La position de conduite semi-relevée offre un équilibre idéal de confort et de performance.
                                     </p>
                                 </div>
@@ -141,7 +141,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-4 pt-5">
                                 <button type="button" class="btn" data-toggle="modal" data-target="#modalVille">
-                                    <img src="../img/ville_1024.jpg" class="card-img" alt="vélo de ville">
+                                    <img src="../Libs/img/ville_1024.jpg" class="card-img" alt="vélo de ville">
                                 </button>
                                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalVille">Détails</button>
                             </div>
@@ -183,7 +183,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="../img/ville_1024.jpg" class="card-img" alt="vélo de ville">
+                                    <img src="../Libs/img/ville_1024.jpg" class="card-img" alt="vélo de ville">
                                     <p>Le GITANE Salsa 6 – 28 est un vélo urbain avec un look ravageur, assortie de couleurs tendances et étincelantes qui sauront colorer vos sorties !</p>
                                 </div>
                                 <div class="modal-footer">

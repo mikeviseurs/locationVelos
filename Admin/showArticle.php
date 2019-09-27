@@ -28,4 +28,3 @@ while ($data=$req->fetchObject()){
 }catch(Exception $e){
     die("Error :".$e->getMessage().' '.$e->getCode());
 }
-?>

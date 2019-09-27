@@ -8,48 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../Libs/css/register.css">
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-md navbar-light bg-info sticky-top">
-        <a class="navbar-brand" href="#">
-            <img src="../img/logo_200.png" width="30" height="30" alt="logo">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.php">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Lieux.php">Location</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">s'identifier/s'enregistrer</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        nom_connecté
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="profil.php">Profil</a>
-                        <a class="dropdown-item" href="#">Déconnecter</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav> -->
     <?php
-        require "../Admin/header.php";
+    require "../Admin/header.php";
     ?>
     <div class="bg-light">
         <div class="container bg-white pt-3">
@@ -63,8 +29,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <label for="psswd">Mot de passe</label>
-                                <input class="form-control" type="password" name="psswd" id="psswd"
-                                    aria-describedby="pwdHelp">
+                                <input class="form-control" type="password" name="psswd" id="psswd" aria-describedby="pwdHelp">
                                 <small id="pwdHelp" class="form-text text-danger">Mot de passe invalide</small>
                             </div>
                             <div class="col-6">
@@ -87,16 +52,14 @@
                         <div class="row">
                             <div class="col-4">
                                 <label for="birth">Date de naissance</label>
-                                <input class="form-control" type="date" name="birth" id="birth"
-                                    aria-describedby="birthHelp">
+                                <input class="form-control" type="date" name="birth" id="birth" aria-describedby="birthHelp">
                                 <small id="birthHelp" class="form-text text-danger">Date de naissance invalide</small>
                             </div>
                             <div class="col-4 text-center">
                                 <div class="border m-2 p-1">
                                     <h6 class="mt-3">Sexe</h6>
                                     <div class="form-check-inline">
-                                        <input class="form-check-input" type="radio" name="sexe" id="sexe1" value="H"
-                                            checked>
+                                        <input class="form-check-input" type="radio" name="sexe" id="sexe1" value="H" checked>
                                         <label class="form-check-label" for="sexe1">Homme</label>
                                     </div>
                                     <div class="form-check-inline">
@@ -109,8 +72,7 @@
                                 <div class="border m-2 p-1">
                                     <h6 class="mt-3">Type</h6>
                                     <div class="form-check-inline">
-                                        <input class="form-check-input" type="radio" name="type" id="type1" value="P"
-                                            checked>
+                                        <input class="form-check-input" type="radio" name="type" id="type1" value="P" checked>
                                         <label class="form-check-label" for="type1">Particulier</label>
                                     </div>
                                     <div class="form-check-inline">
@@ -129,8 +91,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <label for="cp">Code Postal</label>
-                                <input class="form-control" type="text" minlength="0" maxlength="6" name="cp" id="cp"
-                                    aria-describedby="cpHelp">
+                                <input class="form-control" type="text" minlength="0" maxlength="6" name="cp" id="cp" aria-describedby="cpHelp">
                                 <small id="cpHelp" class="form-text text-danger">Code postal invalide</small>
                             </div>
                             <div class="col-6">
@@ -148,8 +109,7 @@
                             </div>
                             <div class="col-6">
                                 <label for="mail">Email</label>
-                                <input class="form-control" type="email" name="mail" id="mail"
-                                    aria-describedby="emailHelp">
+                                <input class="form-control" type="email" name="mail" id="mail" aria-describedby="emailHelp">
                                 <small id="emailHelp" class="form-text text-danger">Email invalide</small>
                             </div>
                         </div>
@@ -172,8 +132,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <label for="cpEntreprise">Code Postal</label>
-                                <input class="form-control" type="text" minlength="0" maxlength="6" name="cpEntreprise"
-                                    id="cpEntreprise" aria-describedby="cpEntrepriseHelp">
+                                <input class="form-control" type="text" minlength="0" maxlength="6" name="cpEntreprise" id="cpEntreprise" aria-describedby="cpEntrepriseHelp">
                                 <small id="cpEntrepriseHelp" class="form-text text-danger">Code postal invalide</small>
                             </div>
                             <div class="col-6">
@@ -192,19 +151,13 @@
         </div>
     </div>
     <?php
-        require "../Admin/footer.php";
+    require "../Admin/footer.php";
     ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
