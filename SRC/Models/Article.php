@@ -1,4 +1,8 @@
 <?php
+
+use src\Controleur\DataBaseManager;
+
+require "../Controler/DataBaseManager.php";
 class Article{
     private $idArticle;
 
@@ -18,8 +22,42 @@ class Article{
         $this->lienPhoto = $lienPhoto;
         $this->actif = $actif;
     }
+    static public function getAllArticles()
+    {
+        $con= DataBaseManager::getConnection();
+        $req=$con->prepare("SELECT * FROM article");
+        $req->execute();
+        $results = array();
+        while(($row = $req->fetch(PDO::FETCH_OBJ)) != null){
+            array_push($results, $row);
+        }
 
+        if(count($results) > 0){
+            return $results;
+        }else{
+            $erreur = new Exception();
+            Errors::saveErrors($erreur->getMessage());
+        }
+    }
 
+    static public function getArticleById($id)
+    {
+        $con= DataBaseManager::getConnection();
+        $req=$con->prepare("SELECT * FROM article WHERE idarticle=:id");
+        $req->bindParam(":id",$id,PDO::PARAM_INT);
+        $req->execute();
+        $results = array();
+        while(($row = $req->fetch(PDO::FETCH_OBJ)) != null){
+            array_push($results, $row);
+        }
+
+        if(count($results) > 0){
+            return $results;
+        }else{
+            $erreur = new Exception();
+            Errors::saveErrors($erreur->getMessage());
+        }
+    }
 
     /**
      * Get the value of idArticle
@@ -121,3 +159,4 @@ class Article{
         return $this;
     }
 }
+var_dump(Article::getAllArticles());
