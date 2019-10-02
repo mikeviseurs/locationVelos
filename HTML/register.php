@@ -149,7 +149,7 @@
                             </div>
                         </div>
                     </fieldset>
-                    <div class="row py-3">
+                    <div class="row py-3 mb-5">
                         <div class="col-6"><button class="btn btn-primary btn-block" type="submit">Valider</button>
                         </div>
                         <div class="col-6"><button class="btn btn-danger btn-block" type="reset">Annuler</button></div>
