@@ -11,10 +11,10 @@
 
 <body>
     <?php
-        require "../SRC/Controler/header.php";
+        require __DIR__."../SRC/Controler/header.php";
         
         echo "Produit Ajouté";
-        require "../SRC/Controler/footer.php";
+        require __DIR__."../SRC/Controler/footer.php";
 ?>
 </body>
 

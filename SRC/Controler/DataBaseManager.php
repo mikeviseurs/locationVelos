@@ -3,8 +3,8 @@ namespace Controler;
 use PDO;
 // use Errors;
 // use config;
-require 'c://wamp/www/php/locationVelos/SRC/config/Config.php';
-require 'c://wamp/www/php/locationVelos/SRC/config/Errors.php';
+require __DIR__.'/../config/Config.php';
+require __DIR__.'/../config/Errors.php';
 
 class DataBaseManager
 {

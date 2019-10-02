@@ -17,9 +17,17 @@ class Form {
         return "<form action=".$this->getAction()." method=".$this->getMethod().">";
     }
 
-    public function getInput($type,$name,$id,$class=null) {
-        return "<input class='".$class."' type =".$type." name = ".$name." id = ".$id.">";
+    public function getInput($type,$name,$id,$class=null,$smallHelp=null) {
+        $ret="<input class='".$class."' type =".$type." name = ".$name." id = ".$id;
+        if(isset($smallHelp)){
+            $ret.=" aria-describedby=".$name."Help"."><small id=".$name."Help class='form-text text-danger'>".$smallHelp."</small>";
+        }
+        else {
+            $ret.=">";
+        }
+        return $ret;
     }
+    
     public function getLabel(string $label, string $for,$class=null)
     {
         return "<label for=".$for." class=".$class.">".$label."</label>";

@@ -1,5 +1,4 @@
 <?php
-
 use Controler\DataBaseManager;
 
 class Article

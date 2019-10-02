@@ -15,16 +15,16 @@
 
 <body>
     <?php
-        require "../SRC/Controler/header.php";
+        require __DIR__."/../SRC/Controler/header.php";
         
-        require "../vendor/autoload.php";
+        require __DIR__."/../vendor/autoload.php";
+        require __DIR__."/../SRC/Models/Article.php";
     ?>
     <div class="bg-light">
         <div class="container bg-white">
             <section>
                 <form action="">
                     <?php
-                    require "../SRC/Models/Article.php";
                     $articles=Article::getAllArticles();
                     foreach ($articles as $art) {
                         $article=new Article();

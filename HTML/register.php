@@ -15,26 +15,34 @@
 
 <body>
     <?php
-    require "../Admin/header.php";
+    require __DIR__."/../SRC/Controler/header.php";
+    require __DIR__."/../SRC/Controler/Form.php";
     ?>
     <div class="bg-light">
         <div class="container bg-white pt-3">
             <h1 class="text-center">S'enregistrer</h1>
-            <form action="../Admin/ajoutUser.php" method="POST">
+            <?php
+                $form = new Form("POST","../Admin/ajoutUser.php");
+                echo $form->getDebutForm();
+            ?>
                 <div class="form-group">
                     <fieldset class="border p-2 mb-2">
-                        <label for="login">Identifiant</label>
-                        <input class="form-control" type="text" name="login" id="login" aria-describedby="loginHelp">
-                        <small id="loginHelp" class="form-text text-danger">Identifiant déjà utilisé</small>
+                        <?php
+                        echo $form->getLabel("Identifiant","login");
+                        echo $form->getInput("text","login","login","form-control","Identifiant déjà utilisé");
+                        ?>
                         <div class="row">
                             <div class="col-6">
-                                <label for="psswd">Mot de passe</label>
-                                <input class="form-control" type="password" name="psswd" id="psswd" aria-describedby="pwdHelp">
-                                <small id="pwdHelp" class="form-text text-danger">Mot de passe invalide</small>
+                                <?php
+                                echo $form->getLabel("Mot de passe","psswd");
+                                echo $form->getInput("password","psswd","psswd","form-control","Mot de passe invalide");
+                                ?>
                             </div>
                             <div class="col-6">
-                                <label for="psswd2">Confirmation du mot de passe</label>
-                                <input class="form-control" type="password" name="psswd2" id="psswd2">
+                                <?php
+                                echo $form->getLabel("Confirmation du mot de passe","psswd2");
+                                echo $form->getInput("password","psswd2","psswd2","form-control");
+                                ?>
                             </div>
                         </div>
                     </fieldset>
@@ -151,7 +159,7 @@
         </div>
     </div>
     <?php
-    require "../Admin/footer.php";
+    require __DIR__."/../SRC/Controler/footer.php";
     ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
