@@ -1,9 +1,10 @@
 <?php
-namespace src\Controleur;
+namespace Controler;
 use PDO;
-
-require '../config/Config.php';
-require '../config/Errors.php';
+// use Errors;
+// use config;
+require 'c://wamp/www/php/locationVelos/SRC/config/Config.php';
+require 'c://wamp/www/php/locationVelos/SRC/config/Errors.php';
 
 class DataBaseManager
 {
@@ -36,8 +37,13 @@ class DataBaseManager
             $erreur = new Exception();
             Errors::saveErrors($erreur->getMessage());
         }
+    }
 
+    static public function insertSQL($sql)
+    {
+        $con= self::getConnection();
 
-        sleep(60);
+        $request= $con->prepare($sql);
+        $request->execute();
     }
 }

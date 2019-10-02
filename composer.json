@@ -8,12 +8,12 @@
     "require": {
         "symfony/debug": "^3.4"
     },
-    "autoload": {
-        "psr-4": {
-            "": "SRC/"
-        }
-    },
     "require-dev": {
         "symfony/var-dumper": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
     }
 }

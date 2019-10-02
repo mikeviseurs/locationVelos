@@ -11,9 +11,10 @@
 
 <body>
     <?php
-        require "header.php";
+        require "../SRC/Controler/header.php";
+        
         echo "Produit Ajouté";
-        require "footer.php";
+        require "../SRC/Controler/footer.php";
 ?>
 </body>
 

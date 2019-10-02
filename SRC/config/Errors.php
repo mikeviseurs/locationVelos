@@ -1,5 +1,5 @@
 <?php
-
+namespace config;
 class Errors{
 
     static public function saveErrors($message){

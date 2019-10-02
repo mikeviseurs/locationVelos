@@ -1,5 +1,4 @@
 <?php
-
 // constantes
 define("DB_SERVER_NAME", "localhost");
 define("DB_NAME", "veloloc");
