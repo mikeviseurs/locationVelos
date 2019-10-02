@@ -1,3 +1,6 @@
+<?php 
+require "../SRC/controler/Form.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,18 +15,20 @@
 <body>
     <div class="container">
         <h1>Ajouter un Article</h1>
-        <form class="form-group" action="ajoutArticlePHP.php" method="post">
-            <label for="nomArticle">Nom de l'article</label>
-            <input type="text" class="form-control mb-3" name="nomArticle" id="nomArticle">
-            <label for="descriptionArticle">Description</label>
-            <textarea class="form-control mb-3" name="descriptionArticle" id="descriptionArticle" cols="30" rows="10" placeholder="Description de l'article"></textarea>
-            <label for="photoArticle">Lien de photo</label>
-            <input class="form-control-file mb-3" type="file" name="photoArticle" id="photoArticle">
-            <div class="row">
-                <div class="col"><button class="btn btn-primary btn-block" type="submit">Enregistrer</button></div>
-                <div class="col"><button class="btn btn-danger btn-block" type="reset">Annuler</button></div>
-            </div>
-        </form>
+        <?php
+        $form=new Form("post","ajoutArticlePHP.php");
+        echo $form->getDebutForm();
+        echo $form->getLabel("Nom de l'article","nomArticle");
+        echo $form->getInput("text","nomArticle","nomArticle","form-control");
+        echo $form->getLabel("Description","descriptionArticle");
+        echo $form->getTextArea("descriptionArticle","descriptionArticle",30,10,"description de l'article","form-control mb-3");
+        echo $form->getLabel("Lien de photo","photoArticle");
+        echo $form->getInput("file","photoArticle","photoArticle","form-control-file mb-3");
+        echo "<div class='row'><div class='col'>";
+        echo $form->getButton("submit","Enregistrer"),"</div>";
+        echo "<div class='col'>",$form->getButton("reset","Annuler","btn-danger"),"</div></div>";
+        echo $form->getFinForm();
+        ?>
     </div>
 </body>
 

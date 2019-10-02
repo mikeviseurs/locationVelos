@@ -1,0 +1,19 @@
+{
+    "name": "62014-14-15/location-velos",
+    "description": "site de location de velos",
+    "authors": [{
+        "name": "Mike Viseurs",
+        "email": "mikeviseurs@free.fr"
+    }],
+    "require": {
+        "symfony/debug": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "SRC/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.4"
+    }
+}
