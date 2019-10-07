@@ -17,7 +17,8 @@
 <body>
     <div class="bg-light">
         <?php
-        require "../Admin/header.php";
+        require __DIR__."/header.php";
+        nav("profil");
         ?>
         <div class="bg-light marge">
             <div class="container bg-white">
@@ -231,7 +232,7 @@
         </div>
     </div>
     <?php
-    require "../Admin/footer.php";
+    require __DIR__."/footer.php";
     ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

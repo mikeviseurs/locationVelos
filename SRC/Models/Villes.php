@@ -8,11 +8,10 @@ class Villes{
 
     private $idPays;
 
-    public function __construct(int $idVille, string $nomVille, bool $centreLocation, int $idPays)
+    public function __construct(int $idVille, string $nomVille, int $idPays)
     {
         $this->idVille = $idVille;
         $this->nomVille = $nomVille;
-        $this->centreLocation = $centreLocation;
         $this->idPays = $idPays;
     }
 

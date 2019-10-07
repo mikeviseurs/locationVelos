@@ -27,7 +27,10 @@ class Form {
         }
         return $ret;
     }
-    
+    public function getRadio($name,$id,$value,$class=null,$checked=null)
+    {
+        return "<input class=".$class." type='radio' name=".$name." id=".$id." value=".$value." ".$checked.">";
+    }
     public function getLabel(string $label, string $for,$class=null)
     {
         return "<label for=".$for." class=".$class.">".$label."</label>";

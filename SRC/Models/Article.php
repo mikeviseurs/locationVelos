@@ -41,9 +41,9 @@ class Article
                         <p class="card-text">prix unitaire à la semaine : 12.49€/jour</p>
                         <p class="card-text">prix unitaire au mois : 10.99€/jour</p>
                         <div class="form-group row">
-                            <label class="col-3 col-form-label" for="timeNb">Durée :</label>
-                            <input class="form-control col-4" type="number" name="timeNb" id="timeNb" value="0" min="0">
-                            <select class="form-control col-5" name="timeType" id="timeType">
+                            <label class="col-3 col-form-label" for="timeNb<?php echo $this->getIdArticle();?>">Durée :</label>
+                            <input class="form-control col-4" type="number" name="timeNb<?php echo $this->getIdArticle();?>" id="timeNb<?php echo $this->getIdArticle();?>" value="0" min="0">
+                            <select class="form-control col-5" name="timeType<?php echo $this->getIdArticle();?>" id="timeType<?php echo $this->getIdArticle();?>">
                                 <option value="Heures">Heures</option>
                                 <option value="Jours">Jours</option>
                                 <option value="Semaines">Semaines</option>
@@ -51,10 +51,10 @@ class Article
                             </select>
                         </div>
                         <div class="form-group row">
-                            <label class="col-3 col-form-label" for="quantity">Quantité</label>
-                            <input class="form-control col-4" type="number" name="quantity" id="quantity" value="0" min="0">
+                            <label class="col-3 col-form-label" for="quantity<?php echo $this->getIdArticle();?>">Quantité</label>
+                            <input class="form-control col-4" type="number" name="quantity<?php echo $this->getIdArticle();?>" id="quantity<?php echo $this->getIdArticle();?>" value="0" min="0">
                             <div class="col-5 font-weight-bolder">
-                                sous-total : <span id="stt_elec" class="text-danger">00€</span>
+                                sous-total : <span id="stt_<?php echo $this->getIdArticle();?>" class="text-danger">00€</span>
                             </div>
                         </div>
                     </div>

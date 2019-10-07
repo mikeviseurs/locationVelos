@@ -1,6 +1,6 @@
 <?php
 require "connect.php";
-
+require "../Controler/fonctions.php";
 //créer la variable de connection
 $db=connect();
 

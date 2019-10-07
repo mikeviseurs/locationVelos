@@ -10,7 +10,7 @@ class Adresse {
 
     private $idVille;
 
-    public function __construct(int $idAdresse, string $adresse1, string $adresse2, string $codePostal, string $idVille)
+    public function __construct(int $idAdresse, string $adresse1, string $adresse2, string $codePostal, int $idVille)
     {
         $this->idAdresse = $idAdresse;
         $this->adresse1 = $adresse1;

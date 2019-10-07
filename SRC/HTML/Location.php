@@ -15,31 +15,36 @@
 
 <body>
     <?php
-        require __DIR__."/../SRC/Controler/header.php";
-        
-        require __DIR__."/../vendor/autoload.php";
-        require __DIR__."/../SRC/Models/Article.php";
+    require __DIR__ . "/../../vendor/autoload.php";
+    require __DIR__ . "/../Models/Article.php";
+    require __DIR__ . "/header.php";
+    require __DIR__ . "/../Controler/Form.php";
+    nav("Location");
     ?>
     <div class="bg-light">
         <div class="container bg-white">
             <section>
-                <form action="">
-                    <?php
-                    $articles=Article::getAllArticles();
-                    foreach ($articles as $art) {
-                        $article=new Article();
-                        $article->addArticle($art);
-                        $article->afficheCardArticle();
-                        $article->afficheModalArticle();
-                    }
-                    ?>
-                </form>
+                <!-- <form action="" method="POST"> -->
+                <?php
+                $form = new Form("POST", "recap.php");
+                echo $form->getDebutForm();
+                $articles = Article::getAllArticles();
+                foreach ($articles as $art) {
+                    $article = new Article();
+                    $article->addArticle($art);
+                    $article->afficheCardArticle();
+                    $article->afficheModalArticle();
+                }
+                echo $form->getButton("submit", "Valider la commande", "btn-success");
+                echo $form->getFinForm();
+                ?>
+                <!-- </form> -->
             </section>
         </div>
     </div>
-<?php
-    require "../SRC/Controler/footer.php";
-?>
+    <?php
+    require __DIR__ . "/footer.php";
+    ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

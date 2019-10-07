@@ -15,9 +15,10 @@
 
 <body>
     <div class="bg-light">
-    <?php
-        require "../Admin/header.php";
-    ?>
+        <?php
+        require_once __DIR__ . "/header.php";
+        nav("Lieux");
+        ?>
         <div class="bg-light marge">
             <div class="container bg-white">
                 <section>
@@ -42,12 +43,9 @@
                 </section>
                 <section>
                     <div class="mx-auto pb-3 embed-responsive embed-responsive-21by9">
-                        <iframe class="embed-responsive-item" width="700" height="400" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Bordeaux%2C%20France+(Titre)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no"
-                            marginheight="0" marginwidth="0"></iframe>
+                        <iframe class="embed-responsive-item" width="700" height="400" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Bordeaux%2C%20France+(Titre)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
-                            <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a
-                                    href="https://embedgooglemaps.com/it/">embedgooglemaps EN</a> & <a
-                                    href="http://www.stedentrippers.nl/berlijn.html">praktische reisinfo over
+                            <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/it/">embedgooglemaps EN</a> & <a href="http://www.stedentrippers.nl/berlijn.html">praktische reisinfo over
                                     berlijn</a></small></div>
                         <style>
                             #gmap_canvas img {
@@ -61,7 +59,7 @@
         </div>
     </div>
     <?php
-        require "../Admin/header.php";
+    require __DIR__ . "/footer.php";
     ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

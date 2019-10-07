@@ -16,7 +16,8 @@
 <body>
     <div class="bg-light hauteur">
         <?php
-        require __DIR__."/../SRC/Controler/header.php";
+        require __DIR__ . "/header.php";
+        nav("login");
         ?>
         <div class="bg-light marge">
             <div class="container bg-white mt-5">
@@ -47,7 +48,7 @@
         </div>
     </div>
     <?php
-    require __DIR__."/../SRC/Controler/footer.php";
+    require __DIR__ . "/footer.php";
     ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

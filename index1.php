@@ -15,7 +15,8 @@
 
 <body>
     <?php
-        require "Admin/header.php";
+        require __DIR__."/SRC/HTML/header.php";
+        nav("index");
     ?>
     <div class="bg-light">
         <div class="container bg-white">
@@ -30,21 +31,21 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/VTT_1024.jpg" class="d-block w-100" alt="VTT">
+                                <img src="SRC/Libs/img/VTT_1024.jpg" class="d-block w-100" alt="VTT">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5 class="text-danger">VTT</h5>
                                     <p class="text-danger">Vélo Tout-Terrain de marque Cannondale</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/electrique_1024.jpg" class="d-block w-100" alt="vélo électrique">
+                                <img src="SRC/Libs/img/electrique_1024.jpg" class="d-block w-100" alt="vélo électrique">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5 class="text-danger">Vélo électrique</h5>
                                     <p class="text-danger">Vélo électrique de marque 2feel-vog</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/ville_1024.jpg" class="d-block w-100" alt="vélo de Ville">
+                                <img src="SRC/Libs/img/ville_1024.jpg" class="d-block w-100" alt="vélo de Ville">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5 class="text-danger">Vélo de ville</h5>
                                     <p class="text-danger">Vélo de ville de la marque Gitane</p>
@@ -112,7 +113,7 @@
             </section>
             <section>
                 <!--Location-->
-                <a class="btn btn-primary btn-lg btn-block my-2" href="HTML/Lieux.php" role="button">Location</a>
+                <a class="btn btn-primary btn-lg btn-block my-2" href="SRC/HTML/Lieux.php" role="button">Location</a>
             </section>
             <section>
                 <!--Tarifs-->
@@ -154,7 +155,7 @@
         </div>
     </div>
     <?php
-        require "Admin/footer.php";
+        require __DIR__."/SRC/HTML/footer.php";
     ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

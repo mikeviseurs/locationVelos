@@ -16,9 +16,10 @@
 
 <body>
     <div class="bg-light">
-    <?php
-        require "../Admin/header.php";
-    ?>
+        <?php
+        require __DIR__ . "/header.php";
+        nav("forgot");
+        ?>
         <div class="bg-light marge">
             <div class="container bg-white">
                 <h1>Mot de passe oublié</h1>
@@ -34,7 +35,7 @@
         </div>
     </div>
     <?php
-        require "../Admin/footer.php";
+    require __DIR__ . "/footer.php";
     ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
